@@ -1,11 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // User authentication storage
     let users = JSON.parse(localStorage.getItem('users')) || [];
     let currentUser = JSON.parse(localStorage.getItem('currentUser')) || null;
 
-    // Handle login/signup modals and other functionalities (as before)
 
-    // Handle login functionality
     const loginBtn = document.getElementById('login');
     const signupBtn = document.getElementById('signup');
 
@@ -30,7 +27,6 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById('login-modal').style.display = 'none';
         });
 
-        // Handle signup functionality
         signupBtn.addEventListener('click', () => {
             document.getElementById('signup-modal').style.display = 'flex';
         });
@@ -51,7 +47,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Flashcards functionality
     if (window.location.pathname.includes('flashcards.html')) {
         if (!currentUser) {
             window.location.href = "index.html";
@@ -69,7 +64,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 card.innerText = `Q: ${flashcard.question}`;
                 flashcardsContainer.appendChild(card);
 
-                // Add event listener to show details on click
                 card.addEventListener('click', () => {
                     document.getElementById('modal-question').innerText = flashcard.question;
                     document.getElementById('modal-answer').innerText = flashcard.answer;
