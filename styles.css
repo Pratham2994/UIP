@@ -47,25 +47,59 @@ nav ul li a {
 }
 
 .hero {
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin: 40px auto;
     padding: 20px;
+    max-width: 1200px;
+    position: relative;
+    right: 50px;
 }
 
+
 .hero h1 {
-    font-size: 36px;
-    color: #1e73be;
+    font-size: 48px; 
+    color: #2d1246; 
+    margin-bottom: 20px;
+    font-weight: bold; 
+    font-family: 'Georgia', serif; 
 }
+
 
 .features {
     list-style: none;
+    font-size: 20px; 
     margin-top: 20px;
+    padding: 0;
+    color: #4b3a73; 
+    line-height: 1.6; 
+    font-family: 'Arial', sans-serif; 
 }
 
 .features li {
-    font-size: 18px;
-    margin: 10px 0;
+    margin: 15px 0; 
+    display: flex;
+    align-items: center;
 }
+
+.features li::before {
+    content: '•'; 
+    color: #1e73be; 
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+
+.hero-image {
+    width: 494.45px;
+    height: 436.15px;
+    flex: 1;
+    object-fit: contain;
+    position: relative;
+    left: 250px;
+}
+
 
 .flashcards-page {
     padding: 20px;
