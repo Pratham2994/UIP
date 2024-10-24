@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', () => {
     let users = JSON.parse(localStorage.getItem('users')) || [];
     let currentUser = JSON.parse(localStorage.getItem('currentUser')) || null;
 
-
     const loginBtn = document.getElementById('login');
     const signupBtn = document.getElementById('signup');
 
@@ -115,5 +114,13 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
-});
 
+    const images = document.querySelectorAll('.hero-image');
+    let currentImageIndex = 0;
+
+    setInterval(() => {
+        images[currentImageIndex].style.display = 'none';
+        currentImageIndex = (currentImageIndex + 1) % images.length;
+        images[currentImageIndex].style.display = 'block';
+    }, 3000);
+});

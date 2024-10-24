@@ -15,6 +15,13 @@
         <button id="signout">Signout</button>
     </nav>
 
+    <div class="breadcrumb-container">
+        <a href="index.html">Home</a>
+        <span>&gt;</span>
+        <a href="flashcards.html">Flashcards</a>
+    </div>
+    
+
     <main class="flashcards-page">
         <div class="flashcards-container" id="flashcards-container">
         </div>
@@ -33,10 +40,10 @@
 
     <div class="modal" id="flashcard-modal">
         <div class="modal-content">
-            <h2>Create Flashcard</h2>
-            <label for="question">Q: </label>
+            <h2 style="padding-bottom: 10px;">Create Flashcard</h2>
+            <label for="question">Question: </label>
             <input type="text" id="question" placeholder="Type the question">
-            <label for="answer">A: </label>
+            <label for="answer">Answer: </label>
             <input type="text" id="answer" placeholder="Enter the answer">
             <button id="save-flashcard">Save</button>
         </div>

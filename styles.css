@@ -16,6 +16,22 @@ nav {
     align-items: center;
     padding: 10px 20px;
 }
+.auth-buttons button, #signout {
+    padding: 10px 20px; 
+    margin: 10px;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px; 
+}
+
+.auth-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
 
 nav .logo {
     color: white;
@@ -37,14 +53,6 @@ nav ul li a {
     text-decoration: none;
 }
 
-.auth-buttons button,#signout {
-    margin-left: 10px;
-    padding: 5px 15px;
-    background-color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
 
 .hero {
     display: flex;
@@ -91,7 +99,7 @@ nav ul li a {
 }
 
 
-.hero-image {
+.hero-carousel {
     width: 494.45px;
     height: 436.15px;
     flex: 1;
@@ -163,27 +171,71 @@ nav ul li a {
 
 .modal-content {
     background-color: white;
-    padding: 20px;
-    border-radius: 8px;
+    padding: 40px;  
+    width: 400px;   
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;  
 }
 
-.modal input {
+.modal-content input {
     display: block;
     width: 100%;
-    margin: 10px 0;
-    padding: 10px;
+    margin: 20px 0;  
+    padding: 15px;   
     border: 1px solid #ccc;
     border-radius: 4px;
+    font-size: 16px;  
 }
 
-.modal button {
-    padding: 10px 20px;
+.modal-content button {
+    padding: 12px 20px;  
     background-color: #1e73be;
     color: white;
     border: none;
     border-radius: 5px;
+    font-size: 16px;     
+    cursor: pointer;
 }
 
+
 .modal-content p {
-    margin: 10px 0;
+    margin: 20px 0;  
+}
+
+.flashcard:nth-child(odd) {
+    background-color: #1e73be;
+}
+
+.flashcard:nth-child(even) {
+    background-color: #145a8d;
+}
+
+
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    color: #1e73be;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: #1e73be;
+    margin-right: 5px;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb span {
+    margin: 0 5px;
+}
+
+.breadcrumb-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    gap: 5px; 
 }
