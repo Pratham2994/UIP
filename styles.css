@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f8ff;
+}
+
+nav {
+    background-color: #1e73be;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+nav .logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.auth-buttons button,#signout {
+    margin-left: 10px;
+    padding: 5px 15px;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hero {
+    text-align: center;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    color: #1e73be;
+}
+
+.features {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.features li {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.flashcards-page {
+    padding: 20px;
+}
+
+.flashcards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.flashcard {
+    background-color: #1e73be;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.flashcard:hover {
+    transform: scale(1.05);
+}
+
+.create-flashcard {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #1e73be;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.create-flashcard:hover {
+    background-color: #145a8d;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.modal input {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.modal button {
+    padding: 10px 20px;
+    background-color: #1e73be;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.modal-content p {
+    margin: 10px 0;
+}

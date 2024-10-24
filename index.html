@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudySpark</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">StudySpark</div>
+        <ul>
+            <li><a href="#" id="flashcards-link">Flashcards</a></li>
+            
+        </ul>
+        <div class="auth-buttons">
+            <button id="login">Login</button>
+            <button id="signup">Signup</button>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <h1>Make learning fun!</h1>
+        <ul class="features">
+            <li>🕶 Study more efficiently</li>
+            <li>📄 Interactive flashcards for retention</li>
+            <li>🎮 Fun Games and Quizzes!</li>
+        </ul>
+    </header>
+
+    <!-- Login Modal -->
+    <div class="modal" id="login-modal">
+        <div class="modal-content">
+            <h2>Login</h2>
+            <label for="login-username">Username</label>
+            <input type="text" id="login-username" placeholder="Enter username">
+            <label for="login-password">Password</label>
+            <input type="password" id="login-password" placeholder="Enter password">
+            <button id="login-submit">Login</button>
+        </div>
+    </div>
+
+    <!-- Signup Modal -->
+    <div class="modal" id="signup-modal">
+        <div class="modal-content">
+            <h2>Signup</h2>
+            <label for="signup-username">Username</label>
+            <input type="text" id="signup-username" placeholder="Enter username">
+            <label for="signup-password">Password</label>
+            <input type="password" id="signup-password" placeholder="Enter password">
+            <button id="signup-submit">Signup</button>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudySpark - Flashcards</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">StudySpark</div>
+        <ul>
+            <li><a href="flashcards.html">Flashcards</a></li>
+        </ul>
+        <button id="signout">Signout</button>
+    </nav>
+
+    <main class="flashcards-page">
+        <div class="flashcards-container" id="flashcards-container">
+            <!-- Flashcards will be added dynamically here -->
+        </div>
+
+        <!-- Create Flashcard Button -->
+        <button id="create-flashcard" class="create-flashcard">+</button>
+    </main>
+
+    <!-- Modal for Flashcard Details -->
+    <div class="modal" id="flashcard-details-modal">
+        <div class="modal-content">
+            <h2>Flashcard Details</h2>
+            <p><strong>Question:</strong> <span id="modal-question"></span></p>
+            <p><strong>Answer:</strong> <span id="modal-answer"></span></p>
+            <button id="close-modal">Close</button>
+        </div>
+    </div>
+
+    <!-- Modal for Creating Flashcard -->
+    <div class="modal" id="flashcard-modal">
+        <div class="modal-content">
+            <h2>Create Flashcard</h2>
+            <label for="question">Q: </label>
+            <input type="text" id="question" placeholder="Type the question">
+            <label for="answer">A: </label>
+            <input type="text" id="answer" placeholder="Enter the answer">
+            <button id="save-flashcard">Save</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
