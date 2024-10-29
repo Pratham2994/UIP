@@ -107,7 +107,11 @@ nav ul li a {
     position: relative;
     left: 250px;
 }
-
+.hero-image{
+    width: 494.45px;
+    height: 436.15px;
+    flex: 1;
+}
 
 .flashcards-page {
     padding: 20px;
